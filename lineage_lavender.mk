@@ -20,7 +20,7 @@ ALPHA_MAINTAINER := <Maloy?/>_
 TARGET_ENABLE_BLUR := true
 TARGET_SUPPORTS_QUICK_TAP := true
 
-PRODUCT_NAME := lavender_lavender
+PRODUCT_NAME := lineage_lavender
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := lavender
 PRODUCT_MANUFACTURER := Xiaomi
