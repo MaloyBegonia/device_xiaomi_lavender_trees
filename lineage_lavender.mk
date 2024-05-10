@@ -14,13 +14,11 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from lavender device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# Rising
-RISING_CHIPSET="SDM660
-RISING_MAINTAINER="<Maloy?/>_"
-RISING_PACKAGE_TYPE := "VANILLA"
+# ALPHADROID
+PROCESSOR_MODEL := SDM660
+ALPHA_MAINTAINER := <Maloy?/>_
 TARGET_ENABLE_BLUR := true
 TARGET_SUPPORTS_QUICK_TAP := true
-PRODUCT_NO_CAMERA := false
 
 PRODUCT_NAME := lavender_lavender
 PRODUCT_BRAND := Xiaomi
