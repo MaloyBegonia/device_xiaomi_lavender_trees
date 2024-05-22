@@ -8,8 +8,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common EvolutionX stuff
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+# Inherit some common Miku UI stuff.
+$(call inherit-product, vendor/miku/build/product/miku_product.mk)
 
 # Inherit from lavender device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -20,7 +20,16 @@ TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_SUPPORTS_QUICK_TAP := true
 
-PRODUCT_NAME := evolution_lavender
+#Gapps
+MIKU_GAPPS := true
+
+#Boost
+TARGET_MIKU_BOOST_FRAMEWORK_PLATFORM := SDM660
+
+# Maintainer
+MIKU_MASTER := <\Maloy?/>_
+
+PRODUCT_NAME := miku_lavender
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := lavender
 PRODUCT_MANUFACTURER := Xiaomi
