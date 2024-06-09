@@ -14,11 +14,12 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from lavender device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# ALPHADROID
-PROCESSOR_MODEL := SDM660
-ALPHA_MAINTAINER := <Maloy?/>_
-TARGET_ENABLE_BLUR := true
-TARGET_SUPPORTS_QUICK_TAP := true
+# Matrixx
+MATRIXX_BUILD_TYPE := Unofficial
+MATRIXX_MAINTAINER := <Maloy?/>_
+MATRIXX_CHIPSET := SDM660
+MATRIXX_BATTERY := 4000mAh
+MATRIXX_DISPLAY := 2340 х 1080
 
 PRODUCT_NAME := lineage_lavender
 PRODUCT_BRAND := Xiaomi
